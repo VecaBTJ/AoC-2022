@@ -6,7 +6,7 @@ for first in content:
     third = content.readline()
 
     for i in range(len(first)):
-        if second.__contains__(first[i]) and third.__contains__(first[i]):
+        if first[i] in second and first[i] in third:
             if 'a' <= first[i] <= 'z':
                 priorities.append(ord(first[i]) - 96)
             elif 'A' <= first[i] <= 'Z':
